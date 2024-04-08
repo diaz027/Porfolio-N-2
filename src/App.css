@@ -1,0 +1,17 @@
+body{
+overflow-x: hidden !important;
+background: radial-gradient(circle at top left, #013c63, #035f9c 0, #001625 20%, #000e18 25%, #001625 100%);
+min-height: 100vh;
+}
+
+img.dark-icon {
+    filter: invert(1);
+}
+
+.text-xl {
+    font-size: 1.25rem; /* 20px */
+}
+
+.mt-5vh {
+    margin-top: 5vh;
+}
