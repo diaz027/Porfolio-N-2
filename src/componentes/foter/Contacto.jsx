@@ -14,7 +14,7 @@ function Foter() {
           src={wsp}
           className=" w-[10vw] ml-[20%] pt-6  md:w-[3vw] md:ml-[41%]"
         />
-        <h1 className="text-white text-2xl ml-[8%] mt-[-8%]  md:text-xl md:ml-[2%]  md:mt-[-2.5%]">
+        <h1 className="text-white text-2xl ml-[15%] mt-[-8%]  md:text-xl md:ml-[2%]  md:mt-[-2.5%]">
           +54 1134546732
         </h1>
       </div>
@@ -33,8 +33,8 @@ function Foter() {
             className="w-[10vw] ml-[20%] pt-6 md:w-[3vw] md:ml-[41%] md:mt-2"
           />
         </a>
-        <h1 className="ml-[15%] mt-[-8%] text-xl md:ml-[6%]  md:mt-[-2.5%]">
-          dami27cito@gmail.com
+        <h1 className="ml-[32%] mt-[-8%] text-xl md:ml-[12%]  md:mt-[-2.5%] break-words overflow-wrap">
+          damian.diaz.develop@gmail.com
         </h1>
       </div>
 
