@@ -3,7 +3,7 @@ import PokemonsCap2 from "./pokemonsCap2.png";
 const Pokemons = () => {
   return (
     <>
-      <div className="bg-transparent-bg px-6 mt-10 rounded-[5vh] h-[40%] pb-4 w-[43vh] mx-auto md:mt-[15vh]  md:w-[80vh] md:h-[60vh] md:mr-[2%] border-zinc-950 border-2">
+      <div className="bg-transparent-bg px-6 mt-20 rounded-[5vh] h-[40%] pb-4 w-[43vh] mx-auto md:mt-[20vh]  md:w-[80vh] md:h-[60vh] md:mr-[2%] border-zinc-950 border-2">
         <h2 className="text-3xl py-4 md:text-4xl"> Pokemons app</h2>
         <p className="text-xl mt-2 md:text-2xl">
           Esta fue mi primera aplicación full-stack que logré desarrollar de

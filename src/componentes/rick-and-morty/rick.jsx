@@ -3,7 +3,7 @@ import rick2 from "./rick2.png";
 const Proyect = () => {
   return (
     <>
-      <div className="bg-transparent-bg px-6 mt-10 rounded-[5vh] h-[40%] w-[43vh] mx-auto md:ml-[5%] md:w-[80vh] md:h-[60vh] border-zinc-950 border-2">
+      <div className="bg-transparent-bg px-6 mt-20 rounded-[5vh] h-[40%] w-[43vh] mx-auto md:mt-[20vh] md:ml-[5%] md:w-[80vh] md:h-[60vh] border-zinc-950 border-2">
         <div className="text-3xl py-4 md:text-4xl">
           <h1> Rick and morty</h1>
           <p className="text-xl mt-2 md:mt-4 md:text-2xl">

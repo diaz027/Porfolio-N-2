@@ -6,7 +6,7 @@ import wsp from "./whatsapp.png";
 function Foter() {
   return (
     <div className="bg-black text-center md:mt-40 mt-40 ">
-      <h1 className="text-3xl md:text-4xl font-roboto italic md:py-4">
+      <h1 className="text-3xl md:text-4xl font-roboto italic py-4">
         ¿Trabajemos juntos?
       </h1>
       <div>
@@ -38,7 +38,7 @@ function Foter() {
         </h1>
       </div>
 
-      <div className="flex justify-center mt-8 md:mt-6">
+      <div className="flex justify-center mt-8 md:mt-6 pb-4">
         <button className="w-[20vw] md:w-[5vw]">
           <a href="https://www.instagram.com/damicitoo/">
             <img src={instagram} className="w-[15vw] md:w-[3vw] " />

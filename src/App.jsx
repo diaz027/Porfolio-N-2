@@ -41,11 +41,11 @@ function App() {
             </h2>
           )}
         </div>
-        <div className="bg-transparent-bg text-xl  mt-[6.5vh]  px-6 rounded-[5vh] h-[35%] w-[43vh] mx-auto md:mt-[30vh] md:mx-[5%] md:px-[80vh] border-2 border-sky-400 md:pb-4">
+        <div className="bg-transparent-bg text-xl  mt-[6.5vh]  px-6 rounded-[5vh] h-[35%] w-[43vh] mx-auto md:mt-[30vh] md:mx-[5%] md:px-[80vh] border-2 border-sky-400 pb-4">
           <p className="text-3xl py-4 md:mx-[-78vh] ">Sobre mi:</p>
           <p className="md:mx-[-78vh] font-roboto regular">
-            Apasionado desarrollador Full Stack graduado de Soy Henry, fascinado
-            por la creatividad y la eficiencia en cada proyecto.
+            Apasionado desarrollador Full Stack, fascinado por la creatividad y
+            la eficiencia en cada proyecto.
           </p>
           <p className="md:mx-[-78vh] ">
             Mi enfoque va más allá del código, construyo experiencias que
@@ -193,10 +193,10 @@ function App() {
         >
           <h1>PROYECTOS</h1>
         </div>
-        <Proyect />
-        <Pokemons />
-        <Vorttex />
         <AltaBurgers />
+        <Vorttex />
+        <Pokemons />
+        <Proyect />
         <div id="Contactos">
           <Foter />
         </div>

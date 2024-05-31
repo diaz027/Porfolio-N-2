@@ -16,12 +16,14 @@ const AltaBurgers = () => {
         </h2>
       </div>
       <div className="px-6 mt-[1vh] md:ml-[60%]">
-        <Button
-          className="bg-[#001625] border-zinc-500 border hover:bg-[#035f9c] py-1 px-1 rounded-lg text-white"
-          variant="faded"
-        >
-          <a href="https://altaburger.vercel.app/">Ir al sitio</a>
-        </Button>
+        <a href="https://altaburger.vercel.app/" target="_BLANK">
+          <Button
+            className="bg-[#001625] border-zinc-500 border hover:bg-[#035f9c] py-1 px-1 rounded-lg text-white"
+            variant="faded"
+          >
+            Ir al sitio
+          </Button>
+        </a>
       </div>
       <img
         src={burge}
