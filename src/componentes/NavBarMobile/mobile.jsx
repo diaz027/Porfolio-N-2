@@ -19,7 +19,7 @@ export default function NavMobile() {
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-transparent-black">
-      <h1 className="text-white text-2xl">DAMIAN DIAZ</h1>
+      <h1 className="text-white text-2xl tracking-tight">DAMIAN DIAZ</h1>
       <img
         src="https://res.cloudinary.com/dv4gefesd/image/upload/v1712589079/logo-damian-porfolio-Photoroom.png-Photoroom_u1oztx.png"
         className="w-[10vw] pb-2"

@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
+        "roboto-flex": ["Roboto Flex", "sans-serif"],
         "roboto-light": ["Roboto", "sans-serif"],
         "roboto-regular": ["Roboto", "sans-serif"],
         "roboto-medium-italic": ["Roboto", "sans-serif"],
