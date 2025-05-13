@@ -3,23 +3,29 @@ import rick2 from "./rick2.png";
 const Proyect = () => {
   return (
     <>
-      <div className="bg-transparent-bg px-6 mt-20 rounded-[5vh] h-[40%] w-[43vh] mx-auto xl:mt-[20vh] xl:ml-[5%] xl:w-[80vh] xl:h-[60vh] border-zinc-950 border-2 2xl:h-[40vh]">
-        <div className="text-3xl py-4 xl:text-4xl 2xl:text-5xl">
-          <h1> Rick and morty</h1>
-          <p className="text-xl mt-2 xl:mt-4 xl:text-2xl 2xl:text-3xl">
-            Esta app marcó mi inicio en programación, brindándome práctica
-            inicial en codificación. Con una API pública, rendericé 800+
-            personajes de Rick & Morty, exploré, filtré y fortalecí habilidades
-            con Redux al enfrentar desafíos en servidor y cliente. Fundamental
-            para entender programación y desarrollo de apps interactivas.
-          </p>
-        </div>
+      <div className="bg-transparent-bg glass-card px-6 mt-10 rounded-[5vh] h-[40%] pb-4 w-[43vh] mx-auto xl:mt-[15vh] xl:w-[80vh] xl:h-[70vh] xl:mr-[2%] border-zinc-950 border-2 2xl:h-[73vh] 2xl:w-[90vh]">
+        <h1 className="text-3xl py-4 xl:text-4xl 2xl:text-5xl 2xl:mt-2">Rick and Morty</h1>
+        <h2 className="text-xl mt-2 xl:text-2xl 2xl:text-3xl">
+          Esta app marcó mi inicio en programación, brindándome práctica
+          inicial en codificación. Con una API pública, rendericé 800+ personajes de Rick & Morty, exploré, filtré y fortalecí habilidades con Redux al enfrentar desafíos en servidor y cliente.
+        </h2>
+      </div>
+      <div className="px-6 mt-[1vh] xl:ml-[60%] 2xl:ml-[52%]">
+        <a href="https://rickandmortyapi.com" target="_blank" rel="noopener noreferrer">
+          <button
+            className="bg-[#001625] border-zinc-500 border hover:bg-[#035f9c] py-1 px-4 rounded-lg text-white 2xl:text-2xl 2xl:px-5 2xl:py-2 2xl:ml-4 2xl:mt-2 transition-all"
+          >
+            Ver Demo
+          </button>
+        </a>
       </div>
       <img
         src={rick2}
-        className="mt-[5vh] w-[43vh] mx-auto xl:mx-[48%] xl:-mt-[55vh] xl:w-[50%] 2xl:w-[45%] 2xl:-mt-[40vh] 2xl:mx-[53%]"
+        className="mt-[5vh] w-[43vh] mx-auto xl:w-[40%] xl:ml-[5%] xl:-mt-[70vh] 2xl:-mt-[75vh] 2xl:rounded-xl"
+        alt="Rick and Morty"
       />
     </>
   );
 };
+
 export default Proyect;

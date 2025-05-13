@@ -5,62 +5,85 @@ import wsp from "./whatsapp.png";
 
 function Foter() {
   return (
-    <div className="bg-black text-center xl:mt-40 mt-40 ">
-      <h1 className="text-3xl xl:text-4xl font-roboto italic py-4 2xl:text-5xl">
+    <div className="container mx-auto">
+      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">
         ¿Trabajemos juntos?
-      </h1>
-      <div>
-        <img
-          src={wsp}
-          className=" w-[10vw] ml-[20%] pt-6  xl:w-[3vw] xl:ml-[41%] 2xl:ml-[39%]"
-        />
-        <h1 className="text-white text-2xl ml-[15%] mt-[-8%]  xl:text-xl xl:ml-[2%]  xl:mt-[-2.5%] 2xl:text-3xl">
-          +54 1134546732
-        </h1>
-      </div>
-
-      <div className="text-white">
-
-        <img
-          align="center"
-          src={Gmail}
-          alt="Gmail"
-          className="w-[10vw] ml-[20%] pt-6 xl:w-[3vw] xl:ml-[41%] xl:mt-2 2xl:ml-[39%]"
-        />
-        <h1 className="ml-[32%] mt-[-8%] text-xl xl:ml-[12%]  xl:mt-[-2.5%] break-words overflow-wrap 2xl:text-3xl 2xl:ml-[16.5%]">
-          damian.diaz.develop@gmail.com
-        </h1>
-      </div>
-
-      <div className="flex justify-center mt-8 xl:mt-6 pb-4 2xl:mt-8 2xl:pb-6">
-        <button className="w-[20vw] xl:w-[5vw]">
-          <a href="https://www.instagram.com/damicitoo/">
-            <img src={instagram} className="w-[15vw] xl:w-[3vw] " />
-          </a>
-        </button>
-        <button className="w-[20vw] xl:w-[5vw]">
-          <a
-            href="https://www.linkedin.com/in/damian-diaz-6a7537258/"
-            target="_blank"
-          >
-            <img
-              align="center"
-              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
-              alt="LinkedIn"
-              className=" w-[15vw] xl:w-[3vw] "
-            />
-          </a>
-        </button>
-        <button className="w-[20vw] xl:w-[5vw]">
-          <a href="https://github.com/diaz027" target="_blank">
-            <img
-              align="center"
-              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg"
-              alt="GitHub"
-              className=" w-[15vw] xl:w-[3vw] "
-            />
-          </a>
-        </button>
+      </h2>
+      
+      <div className="glass-card rounded-2xl p-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold mb-4 text-sky-400">Contacto</h3>
+            
+            <div className="flex items-center gap-4">
+              <div className="p-3 rounded-full bg-white/10">
+                <img src={wsp} className="w-6 h-6" alt="WhatsApp" />
+              </div>
+              <div>
+                <p className="text-sm text-gray-400">WhatsApp</p>
+                <p className="text-lg">+54 1134546732</p>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-4">
+              <div className="p-3 rounded-full bg-white/10">
+                <img src={Gmail} className="w-6 h-6" alt="Email" />
+              </div>
+              <div>
+                <p className="text-sm text-gray-400">Email</p>
+                <p className="text-lg break-all">damian.diaz.develop@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="text-2xl font-bold mb-4 text-sky-400">Redes Sociales</h3>
+            <p className="text-gray-300 mb-6">
+              Sígueme en mis redes sociales para estar al tanto de mis últimos proyectos y actividades.
+            </p>
+            
+            <div className="flex gap-4">
+              <a 
+                href="https://www.instagram.com/damicitoo/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300"
+              >
+                <img src={instagram} className="w-6 h-6" alt="Instagram" />
+              </a>
+              
+              <a 
+                href="https://www.linkedin.com/in/damian-diaz-6a7537258/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300"
+              >
+                <img 
+                  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" 
+                  alt="LinkedIn" 
+                  className="w-6 h-6" 
+                />
+              </a>
+              
+              <a 
+                href="https://github.com/diaz027" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300"
+              >
+                <img 
+                  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" 
+                  alt="GitHub" 
+                  className="w-6 h-6 dark-icon" 
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div className="mt-8 pt-8 border-t border-white/10 text-center">
+          <p className="text-gray-400">© {new Date().getFullYear()} Damian Diaz. Todos los derechos reservados.</p>
+        </div>
       </div>
     </div>
   );
