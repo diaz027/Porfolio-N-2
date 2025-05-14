@@ -1,3 +1,5 @@
+import AltaBurgers from "./alta-Burges"
+
 const Burgers2 = () => {
     return(
         <div>
@@ -16,8 +18,11 @@ const Burgers2 = () => {
                               <p className="text-gray-400 mt-2">Sitio web para una hamburgesería gourmet, con menú interactivo, sistema de pedidos y reservas online.</p>
                               <div className="flex flex-wrap gap-2 mt-3">
                                 <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-[#64ffda] border border-[#64ffda]/20">React</span>
+                                <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-[#64ffda] border border-[#64ffda]/20">Zustand</span>
                                 <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-[#64ffda] border border-[#64ffda]/20">Node.js</span>
                                 <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-[#64ffda] border border-[#64ffda]/20">Express</span>
+                                <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-[#64ffda] border border-[#64ffda]/20">Prisma</span>
+                                <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-[#64ffda] border border-[#64ffda]/20">PostgreSQL</span>
                               </div>
                             </div>
                           </div>

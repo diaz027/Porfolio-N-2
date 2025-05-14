@@ -8,6 +8,7 @@ import Foter from "./componentes/foter/Contacto";
 import Footer2 from "./componentes/foter/footer2";
 import Contactos2 from "./componentes/FormularioContactos/Contactos2";
 import Burgers2 from "./componentes/alta-Burges/alta-burges2";
+import VorttexGamming from "./componentes/vorttex/Vorttex2";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -381,26 +382,7 @@ function App() {
               {/* Proyecto 3 - Alta Burgers */}
               < Burgers2 />
               {/* Proyecto 4 - Vorttex */}
-              <div className="group">
-                <div className="relative overflow-hidden rounded-xl border border-gray-800/50 bg-[#0a0a0a] backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#64ffda]/10 hover:border-[#64ffda]/30 h-[500px] md:h-[550px]">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#64ffda]/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="relative z-10 h-full flex items-center justify-center">
-                    <div className="project-container w-full h-full flex items-center justify-center">
-                      <Vorttex />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                </div>
-                <div className="mt-6">
-                  <h3 className="text-xl font-semibold text-white group-hover:text-[#64ffda] transition-colors duration-300">Vorttex</h3>
-                  <p className="text-gray-400 mt-2">Plataforma de comercio electrónico con carrito de compras, pasarela de pagos y panel de administración.</p>
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-[#64ffda] border border-[#64ffda]/20">React</span>
-                    <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-[#64ffda] border border-[#64ffda]/20">Redux</span>
-                    <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-[#64ffda] border border-[#64ffda]/20">MongoDB</span>
-                  </div>
-                </div>
-              </div>
+              <VorttexGamming />
             </div>
             
             <div className="mt-20 text-center">

@@ -58,11 +58,11 @@ const Vorttex = () => {
             <div className="flex flex-wrap gap-2 mt-4">
               <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-blue-400 border border-blue-400/20">React</span>
               <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-blue-400 border border-blue-400/20">Node.js</span>
-              <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-blue-400 border border-blue-400/20">MongoDB</span>
+              <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-blue-400 border border-blue-400/20">Supabase</span>
             </div>
             
             {/* Botón de visita */}
-            <div className="pt-2">
+            {/* <div className="pt-2">
               <a 
                 href="https://vorttex.vercel.app/" 
                 target="_blank" 
@@ -74,7 +74,7 @@ const Vorttex = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                 </svg>
               </a>
-            </div>
+            </div> */}
           </div>
           
           {/* Lado derecho - Imagen */}

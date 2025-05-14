@@ -62,7 +62,7 @@ const AltaBurgers = () => {
             </div>
             
             {/* Botón de visita */}
-            <div className="pt-2">
+            {/* <div className="pt-2">
               <a 
                 href="https://altaburger.vercel.app/" 
                 target="_blank" 
@@ -74,7 +74,7 @@ const AltaBurgers = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                 </svg>
               </a>
-            </div>
+            </div> */}
           </div>
           
           {/* Lado derecho - Imagen */}
