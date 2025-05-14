@@ -1,29 +1,93 @@
-import vorttex from "./vorttex.png";
+import vorttex00 from "./vorttex00.jpg";
+import { useState } from "react";
 
 const Vorttex = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  
   return (
-    <>
-      <div className="bg-transparent-bg glass-card px-6 mt-10 rounded-[5vh] h-[40%] pb-4 w-[43vh] mx-auto xl:mt-[15vh] xl:w-[80vh] xl:h-[70vh] xl:mr-[2%] border-zinc-950 border-2 2xl:h-[73vh] 2xl:w-[90vh]">
-        <h1 className="text-3xl py-4 xl:text-4xl 2xl:text-5xl 2xl:mt-2">Vorttex</h1>
-        <h2 className="text-xl mt-2 xl:text-2xl 2xl:text-3xl">
-          Plataforma de comercio electrónico desarrollada con React y Node.js. Incluye sistema de autenticación, catálogo de productos, carrito de compras y pasarela de pagos integrada.
-        </h2>
+    <div className="relative w-full h-full p-4 flex flex-col md:flex-row items-center justify-center">
+      {/* Contenedor Principal con efecto hover */}
+      <div 
+        className={`relative overflow-hidden rounded-2xl transition-all duration-500 w-full h-full ${
+          isHovered ? 'shadow-lg shadow-blue-500/20' : ''
+        }`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {/* Gradient Background Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-indigo-700/20 z-0"></div>
+        
+        {/* Contenido */}
+        <div className="relative z-10 flex flex-col md:flex-row h-full w-full p-4 md:p-6">
+          {/* Lado izquierdo - Texto */}
+          <div className="md:w-1/2 space-y-3 md:pr-4">
+            {/* Badge tipo */}
+            <div className="inline-block px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-medium tracking-wider">
+              E-COMMERCE TECH
+            </div>
+            
+            {/* Título con gradiente */}
+            <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent">
+              Vorttex
+            </h2>
+            
+            {/* Descripción concisa */}
+            <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+              Trabajé en el desarrollo de un e-commerce dedicado a la venta de
+              productos de tecnología, una aplicación completa utilizada para
+              gestionar el negocio local, incluyendo el control de stock, ventas e ingresos.
+            </p>
+            
+            {/* Características en formato punto */}
+            <ul className="space-y-2">
+              <li className="flex items-start">
+                <svg className="h-5 w-5 text-blue-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span className="text-sm">Integración con MercadoPago</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="h-5 w-5 text-blue-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span className="text-sm">Panel de administrador y gestión de stock</span>
+              </li>
+            </ul>
+            
+            {/* Tecnologías */}
+            <div className="flex flex-wrap gap-2 mt-4">
+              <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-blue-400 border border-blue-400/20">React</span>
+              <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-blue-400 border border-blue-400/20">Node.js</span>
+              <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-blue-400 border border-blue-400/20">MongoDB</span>
+            </div>
+            
+            {/* Botón de visita */}
+            <div className="pt-2">
+              <a 
+                href="https://vorttex.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 text-sm rounded-lg bg-gradient-to-r from-blue-500/90 to-blue-600/90 text-white font-medium transition-all hover:from-blue-500 hover:to-blue-600"
+              >
+                <span>Ir al sitio</span>
+                <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          {/* Lado derecho - Imagen */}
+          <div className="md:w-1/2 flex items-center justify-center mt-4 md:mt-0">
+            <img
+              src={vorttex00}
+              alt="Vorttex"
+              className="w-full max-w-[250px] md:max-w-[280px] rounded-lg object-cover transform transition-transform duration-500 hover:scale-105"
+            />
+          </div>
+        </div>
       </div>
-      <div className="px-6 mt-[1vh] xl:ml-[60%] 2xl:ml-[52%]">
-        <a href="https://pf-final-damian-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
-          <button
-            className="bg-[#001625] border-zinc-500 border hover:bg-[#035f9c] py-1 px-4 rounded-lg text-white 2xl:text-2xl 2xl:px-5 2xl:py-2 2xl:ml-4 2xl:mt-2 transition-all"
-          >
-            Ver Demo
-          </button>
-        </a>
-      </div>
-      <img
-        src={vorttex}
-        className="mt-[5vh] w-[43vh] mx-auto xl:w-[40%] xl:ml-[5%] xl:-mt-[70vh] 2xl:-mt-[75vh] 2xl:rounded-xl"
-        alt="Vorttex"
-      />
-    </>
+    </div>
   );
 };
 

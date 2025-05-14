@@ -1,30 +1,63 @@
 import rick2 from "./rick2.png";
+import { useState } from "react";
 
 const Proyect = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  
   return (
-    <>
-      <div className="bg-transparent-bg glass-card px-6 mt-10 rounded-[5vh] h-[40%] pb-4 w-[43vh] mx-auto xl:mt-[15vh] xl:w-[80vh] xl:h-[70vh] xl:mr-[2%] border-zinc-950 border-2 2xl:h-[73vh] 2xl:w-[90vh]">
-        <h1 className="text-3xl py-4 xl:text-4xl 2xl:text-5xl 2xl:mt-2">Rick and Morty</h1>
-        <h2 className="text-xl mt-2 xl:text-2xl 2xl:text-3xl">
-          Esta app marcó mi inicio en programación, brindándome práctica
-          inicial en codificación. Con una API pública, rendericé 800+ personajes de Rick & Morty, exploré, filtré y fortalecí habilidades con Redux al enfrentar desafíos en servidor y cliente.
-        </h2>
+    <div className="relative w-full h-full p-4 flex flex-col md:flex-row items-center justify-center">
+      {/* Contenedor Principal con efecto hover */}
+      <div 
+        className={`relative overflow-hidden rounded-2xl transition-all duration-500 w-full h-full ${
+          isHovered ? 'shadow-lg shadow-green-500/20' : ''
+        }`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {/* Gradient Background Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 via-transparent to-teal-700/20 z-0"></div>
+        
+        {/* Contenido */}
+        <div className="relative z-10 flex flex-col md:flex-row h-full w-full p-4 md:p-6">
+          {/* Lado izquierdo - Texto */}
+          <div className="md:w-1/2 space-y-3 md:pr-4">
+            {/* Badge tipo */}
+            <div className="inline-block px-3 py-1 rounded-full bg-green-500/20 text-green-300 text-xs font-medium tracking-wider">
+              API PROJECT
+            </div>
+            
+            {/* Título con gradiente */}
+            <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-green-300 to-green-500 bg-clip-text text-transparent">
+              Rick and Morty
+            </h2>
+            
+            {/* Descripción concisa */}
+            <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+              Esta app marcó mi inicio en programación, brindándome práctica
+              inicial en codificación. Con una API pública, rendericé 800+
+              personajes de Rick & Morty, exploré, filtré y fortalecí habilidades
+              con Redux.
+            </p>
+            
+            {/* Tecnologías */}
+            <div className="flex flex-wrap gap-2 mt-4">
+              <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-green-400 border border-green-400/20">React</span>
+              <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-green-400 border border-green-400/20">Redux</span>
+              <span className="text-xs px-2 py-1 rounded-full bg-[#0f0f0f] text-green-400 border border-green-400/20">API</span>
+            </div>
+          </div>
+          
+          {/* Lado derecho - Imagen */}
+          <div className="md:w-1/2 flex items-center justify-center mt-4 md:mt-0">
+            <img
+              src={rick2}
+              alt="Rick and Morty App"
+              className="w-full max-w-[250px] md:max-w-[280px] rounded-lg object-cover transform transition-transform duration-500 hover:scale-105"
+            />
+          </div>
+        </div>
       </div>
-      <div className="px-6 mt-[1vh] xl:ml-[60%] 2xl:ml-[52%]">
-        <a href="https://rickandmortyapi.com" target="_blank" rel="noopener noreferrer">
-          <button
-            className="bg-[#001625] border-zinc-500 border hover:bg-[#035f9c] py-1 px-4 rounded-lg text-white 2xl:text-2xl 2xl:px-5 2xl:py-2 2xl:ml-4 2xl:mt-2 transition-all"
-          >
-            Ver Demo
-          </button>
-        </a>
-      </div>
-      <img
-        src={rick2}
-        className="mt-[5vh] w-[43vh] mx-auto xl:w-[40%] xl:ml-[5%] xl:-mt-[70vh] 2xl:-mt-[75vh] 2xl:rounded-xl"
-        alt="Rick and Morty"
-      />
-    </>
+    </div>
   );
 };
 
