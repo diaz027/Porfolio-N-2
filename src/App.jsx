@@ -1,10 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
-import Proyect from "./componentes/rick-and-morty/rick";
-import Pokemons from "./componentes/pokemons/pokemos";
-import Vorttex from "./componentes/vorttex/Vorttex";
-import AltaBurgers from "./componentes/alta-Burges/alta-Burges";
-import Foter from "./componentes/foter/Contacto";
 import Footer2 from "./componentes/foter/footer2";
 import Contactos2 from "./componentes/FormularioContactos/Contactos2";
 import Burgers2 from "./componentes/alta-Burges/alta-burges2";
@@ -169,10 +164,9 @@ function App() {
                       Ver Proyectos
                     </span>
                   </a>
-                  <a 
-                    href="#contacto" 
+                  {/* <Link to="CONTACTO" spy={true} smooth={true} */}
                     className="group relative px-8 py-4 overflow-hidden font-mono font-medium bg-white/5 backdrop-blur-sm text-white border border-white/20 rounded-md hover:text-black transition-colors duration-300 shadow-lg"
-                  >
+                  {/* > */}
                     <span className="absolute inset-0 w-full h-full bg-white translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-300"></span>
                     <span className="relative group-hover:text-black flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -180,7 +174,7 @@ function App() {
                       </svg>
                       Contacto
                     </span>
-                  </a>
+                  {/* </Link> */}
                 </div>
                 
                 <div className="mt-16 flex items-center space-x-6 text-gray-400">
@@ -386,12 +380,12 @@ function App() {
             </div>
             
             <div className="mt-20 text-center">
-              <a href="#contacto" className="inline-flex items-center text-[#64ffda] hover:text-white transition-colors duration-300">
+              <div id="CONTACTO" className="inline-flex items-center text-[#64ffda] hover:text-white transition-colors duration-300">
                 <span>¿Interesado en trabajar juntos?</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
-              </a>
+              </div>
             </div>
           </div>
         </section>
