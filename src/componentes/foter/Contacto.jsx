@@ -5,7 +5,7 @@ import wsp from "./whatsapp.png";
 
 function Foter() {
   return (
-    <div className="bg-black text-center xl:mt-40 mt-40 ">
+    <div className="bg-black text-center xl:mt-40 mt-40 2xl:mt-52">
       <h1 className="text-3xl xl:text-4xl font-roboto italic py-4 2xl:text-5xl">
         ¿Trabajemos juntos?
       </h1>
