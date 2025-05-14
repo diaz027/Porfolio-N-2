@@ -27,7 +27,7 @@ const Contactos2 = () => {
                     
                     <div className="flex flex-col space-y-6">
                       <a 
-                        href="mailto:damidiaz@gmail.com" 
+                        href="damian.diaz.develop@gmail.com" 
                         className="group flex items-center p-4 rounded-xl border border-gray-800/50 hover:border-[#64ffda]/50 transition-all duration-300 bg-[#050505]/50 hover:bg-[#050505]/80"
                       >
                         <div className="p-3 rounded-full bg-gradient-to-br from-[#64ffda]/20 to-purple-500/20 mr-4 group-hover:from-[#64ffda]/30 group-hover:to-purple-500/30 transition-colors duration-300">

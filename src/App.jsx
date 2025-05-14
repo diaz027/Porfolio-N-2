@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-scroll";
 import "./App.css";
 import Footer2 from "./componentes/foter/footer2";
 import Contactos2 from "./componentes/FormularioContactos/Contactos2";
@@ -99,19 +100,19 @@ function App() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a 
-              href="#contacto" 
+            <Link 
+              to="CONTACTO" 
               className="px-5 py-2 text-sm font-medium text-[#64ffda] border border-[#64ffda] rounded-md hover:bg-[#64ffda]/10 transition-colors duration-300"
             >
               Contacto
-            </a>
+            </Link>
           </div>
         </div>
       </header>
       
       <main className="relative z-10">
         {/* Hero Section */}
-        <section id="inicio" className="min-h-screen flex flex-col justify-center px-6 md:px-16 lg:px-24 relative overflow-hidden pt-24">
+        <section id="INICIO" className="min-h-screen flex flex-col justify-center px-6 md:px-16 lg:px-24 relative overflow-hidden pt-24">
           {/* Elementos decorativos */}
           <div className="absolute top-1/4 left-10 w-64 h-64 rounded-full bg-gradient-to-r from-purple-500/10 to-blue-500/10 blur-3xl"></div>
           <div className="absolute bottom-1/4 right-10 w-80 h-80 rounded-full bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 blur-3xl"></div>
@@ -152,8 +153,7 @@ function App() {
                 </div>
                 
                 <div className="flex flex-wrap gap-6 animate-fadeIn animation-delay-500">
-                  <a 
-                    href="#proyectos" 
+                  <Link to='PROYECTOS'
                     className="group relative px-8 py-4 overflow-hidden font-mono font-medium text-[#64ffda] border border-[#64ffda] rounded-md hover:text-black transition-colors duration-300 shadow-lg shadow-[#64ffda]/10"
                   >
                     <span className="absolute inset-0 w-full h-full bg-[#64ffda] translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-300"></span>
@@ -163,10 +163,10 @@ function App() {
                       </svg>
                       Ver Proyectos
                     </span>
-                  </a>
-                  {/* <Link to="CONTACTO" spy={true} smooth={true} */}
+                  </Link>
+                  <Link to="CONTACTO" 
                     className="group relative px-8 py-4 overflow-hidden font-mono font-medium bg-white/5 backdrop-blur-sm text-white border border-white/20 rounded-md hover:text-black transition-colors duration-300 shadow-lg"
-                  {/* > */}
+                   > 
                     <span className="absolute inset-0 w-full h-full bg-white translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-300"></span>
                     <span className="relative group-hover:text-black flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -174,7 +174,7 @@ function App() {
                       </svg>
                       Contacto
                     </span>
-                  {/* </Link> */}
+                  </Link>
                 </div>
                 
                 <div className="mt-16 flex items-center space-x-6 text-gray-400">
@@ -215,7 +215,7 @@ function App() {
           </div>
         </section>
         {/* Tecnologías Section */}
-        <section id="tecnologias" className="py-32 px-6 md:px-16 lg:px-24 bg-gradient-to-b from-[#080808] to-[#050505] relative overflow-hidden">
+        <section id="TECNOLOGIAS" className="py-32 px-6 md:px-16 lg:px-24 bg-gradient-to-b from-[#080808] to-[#050505] relative overflow-hidden">
           {/* Elementos decorativos */}
           <div className="absolute top-0 right-0 w-full h-px bg-gradient-to-r from-transparent via-[#64ffda]/20 to-transparent"></div>
           <div className="absolute bottom-0 right-0 w-full h-px bg-gradient-to-r from-transparent via-[#64ffda]/20 to-transparent"></div>
@@ -343,17 +343,17 @@ function App() {
             </div>
             
             <div className="mt-20 text-center">
-              <a href="#proyectos" className="inline-flex items-center text-[#64ffda] hover:text-white transition-colors duration-300">
+              <Link to='PROYECTOS' className="inline-flex items-center text-[#64ffda] hover:text-white transition-colors duration-300">
                 <span>Ver mis proyectos</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
         {/* Proyectos Section */}
-        <section id="proyectos" className="py-32 px-6 md:px-16 lg:px-24 relative overflow-hidden">
+        <section id="PROYECTOS" className="py-32 px-6 md:px-16 lg:px-24 relative overflow-hidden">
           {/* Elementos decorativos */}
           <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#64ffda]/20 to-transparent"></div>
           <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#64ffda]/20 to-transparent"></div>
@@ -398,15 +398,14 @@ function App() {
       <Footer2 />
       {/* Botón para subir */}
       {showScrollTop && (
-        <a 
-          href="#inicio" 
+        <Link to='INICIO'
           className="scroll-top-button fixed bottom-6 right-6 flex items-center justify-center w-8 h-14 bg-black/80 border-l border-[#64ffda]/10 rounded-r-md z-50 hover:border-l-[#64ffda]/30 transition-all duration-500 group"
           aria-label="Volver arriba"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#64ffda]/70 group-hover:text-[#64ffda] transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
           </svg>
-        </a>
+        </Link>
       )}
     </div>
   );

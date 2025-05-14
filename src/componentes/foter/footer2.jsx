@@ -1,3 +1,5 @@
+import { Link } from "react-scroll"
+
 const Footer2 = () =>{
     return(
     <footer className="py-10 bg-gradient-to-b from-[#030303] to-[#020202] relative overflow-hidden">
@@ -49,10 +51,10 @@ const Footer2 = () =>{
             </p>
             
             <div className="flex space-x-6">
-              <a href="#inicio" className="text-gray-400 hover:text-[#64ffda] text-sm transition-colors duration-300">Inicio</a>
-              <a href="#tecnologias" className="text-gray-400 hover:text-[#64ffda] text-sm transition-colors duration-300">Tecnologías</a>
-              <a href="#proyectos" className="text-gray-400 hover:text-[#64ffda] text-sm transition-colors duration-300">Proyectos</a>
-              <a href="#contacto" className="text-gray-400 hover:text-[#64ffda] text-sm transition-colors duration-300">Contacto</a>
+              <Link to="INICIO" className="text-gray-400 hover:text-[#64ffda] text-sm transition-colors duration-300">Inicio</Link>
+              <Link to="TECNOLOGIAS" className="text-gray-400 hover:text-[#64ffda] text-sm transition-colors duration-300">Tecnologías</Link>
+              <Link to="PROYECTOS" className="text-gray-400 hover:text-[#64ffda] text-sm transition-colors duration-300">Proyectos</Link>
+              <Link to="CONTACTO" className="text-gray-400 hover:text-[#64ffda] text-sm transition-colors duration-300">Contacto</Link>
             </div>
           </div>
         </div>
