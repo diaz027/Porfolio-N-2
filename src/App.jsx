@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 import "./App.css";
+import Carrusel1 from "./componentes/Carrusel/Carousel"
+import Carrusel2 from "./componentes/Carrusel/Carousel2"
+import Carrusel3 from "./componentes/Carrusel/Carousel3"
 import Footer2 from "./componentes/foter/footer2";
 import Contactos2 from "./componentes/FormularioContactos/Contactos2";
 import Burgers2 from "./componentes/alta-Burges/alta-burges2";
@@ -238,48 +241,9 @@ function App() {
                   <div className="h-px bg-gradient-to-r from-[#64ffda]/50 to-transparent flex-grow ml-4"></div>
                 </h3>
                 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                  <div className="group">
-                    <div className="flex flex-col items-center p-6 rounded-xl bg-[#0a0a0a] border border-gray-800/50 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#64ffda]/5 hover:border-[#64ffda]/30">
-                      <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-[#64ffda]/20 to-purple-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" className="w-16 h-16 mb-4 relative z-10" />
-                      </div>
-                      <span className="text-gray-300 group-hover:text-[#64ffda] transition-colors duration-300 font-medium">HTML5</span>
-                    </div>
-                  </div>
-                  
-                  <div className="group">
-                    <div className="flex flex-col items-center p-6 rounded-xl bg-[#0a0a0a] border border-gray-800/50 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#64ffda]/5 hover:border-[#64ffda]/30">
-                      <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-[#64ffda]/20 to-purple-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" className="w-16 h-16 mb-4 relative z-10" />
-                      </div>
-                      <span className="text-gray-300 group-hover:text-[#64ffda] transition-colors duration-300 font-medium">CSS3</span>
-                    </div>
-                  </div>
-                  
-                  <div className="group">
-                    <div className="flex flex-col items-center p-6 rounded-xl bg-[#0a0a0a] border border-gray-800/50 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#64ffda]/5 hover:border-[#64ffda]/30">
-                      <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-[#64ffda]/20 to-purple-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" className="w-16 h-16 mb-4 relative z-10" />
-                      </div>
-                      <span className="text-gray-300 group-hover:text-[#64ffda] transition-colors duration-300 font-medium">JavaScript</span>
-                    </div>
-                  </div>
-                  
-                  <div className="group">
-                    <div className="flex flex-col items-center p-6 rounded-xl bg-[#0a0a0a] border border-gray-800/50 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#64ffda]/5 hover:border-[#64ffda]/30">
-                      <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-[#64ffda]/20 to-purple-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" className="w-16 h-16 mb-4 relative z-10" />
-                      </div>
-                      <span className="text-gray-300 group-hover:text-[#64ffda] transition-colors duration-300 font-medium">Tailwind CSS</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                
+              <Carrusel1 />
+              </div> 
               
               {/* Frameworks & Libraries */}
               <div className="col-span-full mb-12">
@@ -288,27 +252,8 @@ function App() {
                   <div className="h-px bg-gradient-to-r from-[#64ffda]/50 to-transparent flex-grow ml-4"></div>
                 </h3>
                 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                  <div className="group">
-                    <div className="flex flex-col items-center p-6 rounded-xl bg-[#0a0a0a] border border-gray-800/50 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#64ffda]/5 hover:border-[#64ffda]/30">
-                      <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-[#64ffda]/20 to-purple-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" className="w-16 h-16 mb-4 relative z-10" />
-                      </div>
-                      <span className="text-gray-300 group-hover:text-[#64ffda] transition-colors duration-300 font-medium">React</span>
-                    </div>
-                  </div>
-                  
-                  <div className="group">
-                    <div className="flex flex-col items-center p-6 rounded-xl bg-[#0a0a0a] border border-gray-800/50 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#64ffda]/5 hover:border-[#64ffda]/30">
-                      <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-[#64ffda]/20 to-purple-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" className="w-16 h-16 mb-4 relative z-10" />
-                      </div>
-                      <span className="text-gray-300 group-hover:text-[#64ffda] transition-colors duration-300 font-medium">Redux</span>
-                    </div>
-                  </div>
-                </div>
+                
+                <Carrusel2 />
               </div>
               
               {/* Backend */}
@@ -317,28 +262,7 @@ function App() {
                   <span className="text-[#64ffda] mr-2">03.</span> Backend
                   <div className="h-px bg-gradient-to-r from-[#64ffda]/50 to-transparent flex-grow ml-4"></div>
                 </h3>
-                
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                  <div className="group">
-                    <div className="flex flex-col items-center p-6 rounded-xl bg-[#0a0a0a] border border-gray-800/50 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#64ffda]/5 hover:border-[#64ffda]/30">
-                      <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-[#64ffda]/20 to-purple-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" className="w-16 h-16 mb-4 relative z-10 dark-icon" />
-                      </div>
-                      <span className="text-gray-300 group-hover:text-[#64ffda] transition-colors duration-300 font-medium">Node.js</span>
-                    </div>
-                  </div>
-                  
-                  <div className="group">
-                    <div className="flex flex-col items-center p-6 rounded-xl bg-[#0a0a0a] border border-gray-800/50 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#64ffda]/5 hover:border-[#64ffda]/30">
-                      <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-[#64ffda]/20 to-purple-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" className="w-16 h-16 mb-4 relative z-10 dark-icon" />
-                      </div>
-                      <span className="text-gray-300 group-hover:text-[#64ffda] transition-colors duration-300 font-medium">Express</span>
-                    </div>
-                  </div>
-                </div>
+                <Carrusel3 />
               </div>
             </div>
             
