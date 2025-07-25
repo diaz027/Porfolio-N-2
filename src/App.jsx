@@ -199,7 +199,7 @@ function App() {
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#64ffda]/20 to-purple-500/20 blur-xl"></div>
                   <div className="relative z-10 rounded-2xl overflow-hidden border border-white/10 backdrop-blur-sm bg-black/30 p-1">
                     <img
-                      src="/damiGalan.jpg"
+                      src="/dami_02.jpg"
                       alt="Damian Diaz"
                       className="w-full h-auto object-cover rounded-xl"
                     />
