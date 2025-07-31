@@ -94,7 +94,7 @@ function App() {
           <h1 className="text-2xl font-bold text-white">DAMIAN<span className="text-[#64ffda]">.</span></h1>
           <div className="flex space-x-4">
             <a 
-              href="/CV-Damian-Diaz.pdf" 
+              href="/CV_Damian_Diaz.pdf" 
               download
               className="px-5 py-2 text-sm font-medium text-white border border-white/30 rounded-md hover:bg-white/5 transition-colors duration-300 flex items-center"
             >
